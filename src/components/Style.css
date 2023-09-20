@@ -1,0 +1,29 @@
+.header-logo img{
+    width: 130px;
+height: 120px;
+}
+.footer{
+    background-color: #fde4e4;
+    height: 300px;
+}
+.footer-logo img{
+    width: 150px;
+    height: 150px;
+}
+.footer-input{
+    border: 1px solid;
+    width: 240px;
+    padding: 4px;
+}
+.footer-input input{
+background: transparent;
+outline: none;
+border: none;
+}
+.footer-input i{
+background-color: rgb(48, 48, 72);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+    }
