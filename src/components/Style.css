@@ -27,3 +27,18 @@ background-color: rgb(48, 48, 72);
   border-radius: 10px;
   cursor: pointer;
     }
+    .footer__title {
+        font-size: 1.1rem;
+        color: #212245;
+        font-weight: 600;
+      }
+    
+      .delivery__time-item span {
+        font-weight: 600;
+        color: #212245;
+        margin: 0;
+      }
+      
+      .delivery__time-item p {
+        color: #212245;
+      }
