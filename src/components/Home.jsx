@@ -18,17 +18,28 @@ const Home = () => {
     <button  className='btn-normal'  >  Order now <i class="ri-arrow-right-line"></i> </button>
     <button  className='btn-outline' >  See all foods </button>
        </div>
-       <div className='home-icons d-flex gap-5 mt-5'>
-        <div>
-        <i class="ri-secure-payment-line"></i>
-        <span>No shipping charge</span>
-        </div>
-        <div>
-        <i class="ri-secure-payment-line"></i>
-        <span>100% secure checkout</span>
+
+      <div className=' home-shipping-icons d-flex align-items-center gap-5 mt-5'> 
+      
+          <p className='d-flex align-items-center gap-2'>
+            <span className='home-icons'><i class="ri-secure-payment-line"></i></span>
+          No shipping charge
+          </p>
+          <p className='d-flex align-items-center gap-2'>
+            <span className='home-icons'><i class="ri-secure-payment-line"></i></span>
+          No shipping charge
+          </p>
+        
+        
+       
+       
+       
+        
+
         </div>
        
-       </div>
+       
+      
 </Col>
 <Col className='lg-6'>
 <img src={delivery}/>
