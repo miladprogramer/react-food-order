@@ -2,6 +2,7 @@ import React from 'react'
 import { Container,Row,Col } from 'reactstrap'
 import delivery from '../images/delivery.png'
 import './Style.css'
+import Category from './Category'
 const Home = () => {
   return (
     <Container className='mt-5'>
@@ -30,11 +31,6 @@ const Home = () => {
           No shipping charge
           </p>
         
-        
-       
-       
-       
-        
 
         </div>
        
@@ -44,6 +40,21 @@ const Home = () => {
 <Col className='lg-6'>
 <img src={delivery}/>
 </Col>
+         </Row>
+
+         <Row className='mt-5'>
+<Category />
+         </Row>
+
+         <Row className='mt-5 text-center mb-5'>
+          <h5 className='feature-title'>What we serve</h5>
+          <h2 className='feature-subtitle'>Just seat back at home</h2>
+          <h2 className='feature-subtitle'>we will 
+          <span className='feature-bold'> take care</span></h2>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tempora?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tempora?</p>
+
          </Row>
     </Container>
    

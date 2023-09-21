@@ -142,3 +142,30 @@
   font-weight: 600;
   font-size: 0.9rem;
 }
+.category-item{
+  background-color: #fde4e4;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.category-item:hover{
+  transform: translateY(-15px);
+}
+.category-img img{
+width: 50px;
+height: 50px;
+background-color: #df2020;
+padding: 4px;
+border-radius: 50%;
+}
+.feature-title{
+  color: #df2020;
+  font-weight: 600;
+}
+.feature-subtitle{
+  font-weight: 600;
+}
+.feature-bold{
+  color: #df2020;
+}
