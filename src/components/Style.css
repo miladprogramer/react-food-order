@@ -181,3 +181,16 @@ margin-bottom: 15px;
 .feature-content p{
 color: #777;
 }
+.foods-category{
+  background-color: #df2020;
+  border-radius: 8px;
+}
+.foods-category button{
+  background: transparent;
+  border: none;
+  color: white;
+}
+.foods-category button img{
+  width: 25px;
+  height: 22px;
+}

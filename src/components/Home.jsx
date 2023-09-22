@@ -4,6 +4,9 @@ import delivery from '../images/delivery.png'
 import pickup from '../images/pickup.png'
 import fastDelivery from '../images/fast delivery.png'
 import dine from '../images/dine.png'
+import pizza2 from '../images/pizza2.png'
+import burger from '../images/burger.png'
+import bread from '../images/bread.png'
 import './Style.css'
 import Category from './Category'
 const Home = () => {
@@ -61,7 +64,7 @@ const Home = () => {
       </Row>
 
       <Row>
-      <div className="feature-item d-flex gap-3 text-center mt-5">
+      <div className="feature-item d-flex gap-3 text-center mt-5 mb-5">
 <div className='feature-content '>
   <img src={fastDelivery}/>
   <h5>Fast Delivery</h5>
@@ -79,6 +82,18 @@ const Home = () => {
 </div>
 
 </div>
+      </Row>
+
+      <Row>
+        <div className='foods-title text-center mt-5 mb-4'>
+<h4>Popular Foods</h4>
+        </div>
+        <div className='foods-category d-flex align-items-center justify-content-center gap-5 p-2 mb-5'>
+<button>All</button>
+<button className='d-flex align-items-center gap-2'> <img src={burger}/> Burger</button>
+<button className='d-flex align-items-center gap-2'><img src={pizza2}/>Pizza</button>
+<button className='d-flex align-items-center gap-2'><img src={bread}/>Bread</button>
+        </div>
       </Row>
     </Container>
 
