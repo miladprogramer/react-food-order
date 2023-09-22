@@ -169,3 +169,15 @@ border-radius: 50%;
 .feature-bold{
   color: #df2020;
 }
+.feature-content img{
+width: 130px;
+height: 90px;
+margin-bottom: 15px;
+}
+.feature-content h5{
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.feature-content p{
+color: #777;
+}
