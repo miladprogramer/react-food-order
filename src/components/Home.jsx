@@ -1,4 +1,4 @@
-import {React ,useState,useEffect} from 'react'
+import { React, useState, useEffect } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import delivery from '../images/delivery.png'
 import pickup from '../images/pickup.png'
@@ -13,8 +13,30 @@ import Foods from './Foods'
 import AllProducts from '../Fake-Data/FakeData'
 const Home = () => {
 
-  const [category,setCategory]=useState("All")
-  const [products,setProducts]=useState(AllProducts)
+  const [category, setCategory] = useState("All")
+  const [products, setProducts] = useState(AllProducts)
+
+  useEffect(()=>{
+
+  if(category==="All"){
+setProducts(AllProducts)
+  }
+  if(category==="Burger"){
+    const productsFiltered=AllProducts.filter(item=> item.category==="Burger")
+    setProducts(productsFiltered)
+  }
+ 
+  if(category==="Pizza"){
+    const productsFiltered=AllProducts.filter(item=>item.category==="Pizza")
+    setProducts(productsFiltered)
+  }
+  
+  if(category==="Bread"){
+    const productsFiltered=AllProducts.filter(item=>item.category==="Bread")
+    setProducts(productsFiltered)
+  }
+  
+  },[category])
 
   return (
     <Container className='mt-5'>
@@ -43,10 +65,7 @@ const Home = () => {
               No shipping charge
             </p>
 
-
           </div>
-
-
 
         </Col>
         <Col className='lg-6'>
@@ -70,49 +89,49 @@ const Home = () => {
       </Row>
 
       <Row>
-      <div className="feature-item d-flex gap-3 text-center mt-5 mb-5">
-<div className='feature-content '>
-  <img src={fastDelivery}/>
-  <h5>Fast Delivery</h5>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
-</div>
-<div className='feature-content'>
-<img src={dine}/>
-  <h5>Super Dine In</h5>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
-</div>
-<div className='feature-content'>
-<img src={pickup}/>
-  <h5>Easy Pick Up</h5>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
-</div>
+        <div className="feature-item d-flex gap-3 text-center mt-5 mb-5">
+          <div className='feature-content '>
+            <img src={fastDelivery} />
+            <h5>Fast Delivery</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+          </div>
+          <div className='feature-content'>
+            <img src={dine} />
+            <h5>Super Dine In</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+          </div>
+          <div className='feature-content'>
+            <img src={pickup} />
+            <h5>Easy Pick Up</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+          </div>
 
-</div>
+        </div>
       </Row>
 
       <Row>
         <div className='foods-title text-center mt-5 mb-4'>
-<h4>Popular Foods</h4>
+          <h4>Popular Foods</h4>
         </div>
         <div className='foods-category   d-flex align-items-center justify-content-center gap-5 p-3 mb-5'>
-<button>All</button>
-<button className='d-flex align-items-center gap-2'> <img src={burger}/> Burger</button>
-<button className='d-flex align-items-center gap-2'><img src={pizza2}/>Pizza</button>
-<button className='d-flex align-items-center gap-2'><img src={bread}/>Bread</button>
+          <button className={`${category==="All" ? "active-btn" : ""}`} onClick={()=>setCategory("All")}>All</button>
+          <button className={`d-flex align-items-center gap-2 ${category==="Burger" ? "active-btn" : ""}`} onClick={()=>setCategory("Burger")} > <img src={burger} /> Burger</button>
+          <button className={`d-flex align-items-center gap-2 ${category==="Pizza" ? "active-btn" : ""}`} onClick={()=>setCategory("Pizza")} ><img src={pizza2} />Pizza</button>
+          <button className={`d-flex align-items-center gap-2 ${category==="Bread" ? "active-btn" : ""}`} onClick={()=>setCategory("Bread")} ><img src={bread} />Bread</button>
         </div>
       </Row>
 
       <Row>
         {
-          AllProducts.map((item)=>(
+          products.map((item) => (
 
-             <Col lg="3" md="4">
-            <Foods item={item} />
-        </Col>
+            <Col lg="3" md="4">
+              <Foods item={item} />
+            </Col>
           ))
         }
-       
-      
+
+
       </Row>
     </Container>
 
