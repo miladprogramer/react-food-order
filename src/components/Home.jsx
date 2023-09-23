@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col,ListGroup,ListGroupItem } from 'reactstrap'
 import delivery from '../images/delivery.png'
 import pickup from '../images/pickup.png'
 import fastDelivery from '../images/fast delivery.png'
@@ -7,6 +7,7 @@ import dine from '../images/dine.png'
 import pizza2 from '../images/pizza2.png'
 import burger from '../images/burger.png'
 import bread from '../images/bread.png'
+import location from '../images/location.png'
 import './Style.css'
 import Category from './Category'
 import Foods from './Foods'
@@ -133,6 +134,59 @@ setProducts(AllProducts)
 
 
       </Row>
+    
+    
+      <Row>
+        <Col lg="6">
+          <img className='w-100 mt-5' src={location}/>
+        </Col>
+        <Col lg="6">
+          <div className='why-tasty-foods'>
+
+            <h2 className='why-title'>Why <span className='why-bold'>TASTY FOODS?</span></h2>
+            <p className="why-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, minus. Tempora reprehenderit a corporis velit,
+                  laboriosam vitae ullam, repellat illo sequi odio esse iste
+                  fugiat dolor, optio incidunt eligendi deleniti!
+                </p>
+                <ListGroup className="mt-4">
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className=" choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Fresh and tasty
+                      foods
+                    </p>
+                    <p className="choose__us-desc">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quia, voluptatibus.
+                    </p>
+                  </ListGroupItem>
+
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i> Quality support
+                    </p>
+                    <p className="choose__us-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Qui, earum.
+                    </p>
+                  </ListGroupItem>
+
+                  <ListGroupItem className="border-0 ps-0">
+                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                      <i class="ri-checkbox-circle-line"></i>Order from any
+                      location{" "}
+                    </p>
+                    <p className="choose__us-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Qui, earum.
+                    </p>
+                  </ListGroupItem>
+                </ListGroup>
+          </div>
+        </Col>
+      </Row>
+    
     </Container>
 
   )

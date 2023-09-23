@@ -199,6 +199,7 @@ color: #777;
   background-color: white !important;
   color: #df2020 !important;
   border-radius: 5px;
+  transition: 0.4s;
 }
 .product{
   border: 1px solid #e2e2e2;
@@ -232,5 +233,11 @@ color: #777;
 }
 .addToCart span{
   font-weight: 600;
+  color: #df2020;
+}.why-title{
+  margin-top: 100px;
+  font-weight: 600;
+}
+.why-bold{
   color: #df2020;
 }
