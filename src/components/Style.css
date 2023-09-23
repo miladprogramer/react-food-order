@@ -236,8 +236,26 @@ color: #777;
   color: #df2020;
 }.why-title{
   margin-top: 100px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .why-bold{
   color: #df2020;
+}
+.why-desc {
+  color: #777;
+  line-height: 30px;
+}
+
+.choose-us-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.choose-us-title i {
+  font-weight: 500 !important;
+  color: #df2020;
+}
+
+.choose-us-desc {
+  color: #777;
 }

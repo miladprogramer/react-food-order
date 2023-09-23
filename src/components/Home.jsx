@@ -152,32 +152,32 @@ setProducts(AllProducts)
                 </p>
                 <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
-                    <p className=" choose__us-title d-flex align-items-center gap-2 ">
+                    <p className=" choose-us-title d-flex align-items-center gap-2 ">
                       <i class="ri-checkbox-circle-line"></i> Fresh and tasty
                       foods
                     </p>
-                    <p className="choose__us-desc">
+                    <p className="choose-us-desc">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Quia, voluptatibus.
                     </p>
                   </ListGroupItem>
 
                   <ListGroupItem className="border-0 ps-0">
-                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                    <p className="choose-us-title d-flex align-items-center gap-2 ">
                       <i class="ri-checkbox-circle-line"></i> Quality support
                     </p>
-                    <p className="choose__us-desc">
+                    <p className="choose-us-desc">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui, earum.
                     </p>
                   </ListGroupItem>
 
                   <ListGroupItem className="border-0 ps-0">
-                    <p className="choose__us-title d-flex align-items-center gap-2 ">
+                    <p className="choose-us-title d-flex align-items-center gap-2 ">
                       <i class="ri-checkbox-circle-line"></i>Order from any
                       location{" "}
                     </p>
-                    <p className="choose__us-desc">
+                    <p className="choose-us-desc">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui, earum.
                     </p>
