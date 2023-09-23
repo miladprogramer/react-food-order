@@ -8,10 +8,12 @@ import pizza2 from '../images/pizza2.png'
 import burger from '../images/burger.png'
 import bread from '../images/bread.png'
 import location from '../images/location.png'
+import network from '../images/network.png'
 import './Style.css'
 import Category from './Category'
 import Foods from './Foods'
 import AllProducts from '../Fake-Data/FakeData'
+import TestimonialSlider from './TestimonialSlider'
 const Home = () => {
 
   const [category, setCategory] = useState("All")
@@ -141,7 +143,7 @@ setProducts(AllProducts)
           <img className='w-100 mt-5' src={location}/>
         </Col>
         <Col lg="6">
-          <div className='why-tasty-foods'>
+          <div className='why-tasty-foods '>
 
             <h2 className='why-title'>Why <span className='why-bold'>TASTY FOODS?</span></h2>
             <p className="why-desc">
@@ -187,6 +189,28 @@ setProducts(AllProducts)
         </Col>
       </Row>
     
+      <Row>
+        <Col lg="6">
+        <div className="testimonial">
+                <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
+                <h2 className="testimonial__title mb-4">
+                  What our <span>customers</span> are saying
+                </h2>
+                <p className="testimonial__desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Distinctio quasi qui minus quos sit perspiciatis inventore
+                  quis provident placeat fugiat!
+                </p>
+                <TestimonialSlider />
+                </div>
+        </Col>
+        <Col lg="6">
+          <div className='why-tasty-foods'>
+          <img className='w-100 mt-5' src={network}/>
+            </div>
+            </Col>
+         
+            </Row>
     </Container>
 
   )
