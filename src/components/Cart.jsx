@@ -37,6 +37,12 @@ const Cart = () => {
           </span>
         </div>
       </div>
+      <div className='checkout d-flex align-items-center justify-content-between'>
+        <div>
+            <span>Subtotal: <span className='price-bold'>$120</span></span>
+        </div>
+        <button>Checkout</button>
+      </div>
       </div>
     </ListGroupItem>
         </>
