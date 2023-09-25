@@ -1,63 +1,58 @@
 
 import React from 'react'
 import './Style.css'
-import product_01 from '../images/product_01.jpg'
-import { ListGroupItem } from 'reactstrap'
-import { UseSelector } from 'react-redux/es/hooks/useSelector'
+import { Link } from "react-router-dom";
+import { ListGroup } from 'reactstrap'
+import {  useSelector } from 'react-redux/es/hooks/useSelector'
 import { useDispatch } from 'react-redux'
 import { cartUiActions } from '../Redux/cartUiSlice'
-
+import CartItem from './CartItem'
 
 
 
 const Cart = () => {
+const dispatch=useDispatch()
 
-  const dispatch=useDispatch()
+
+
+const cartProducts = useSelector((state) => state.cart.cartItems);
+const totalAmount=useSelector((state)=>state.cart.totalAmount)
   const toggleBasket=()=>{
     dispatch(cartUiActions.toggle())
   }
     return (
         <>
-           <ListGroupItem className="border-0 cart__item">
-            <div className='cart-content'>
-                <div className='content-close-btn mb-3 p-3'>
-                 <i class="ri-close-line" onClick={toggleBasket}></i>   
-                </div>
-                
-            
-      <div className="cart__item-info d-flex gap-2 p-3">
-        <img src={product_01} alt="product-img" />
-
-        <div className="cart__product-info w-100 d-flex align-items-center gap-4 justify-content-between">
-          <div>
-            <h6 className="cart__product-title">Pizza</h6>
-            <p className=" d-flex align-items-center gap-5 cart__product-price">
-              x <span>$120</span>
-            </p>
-            <div className=" d-flex align-items-center justify-content-between increase__decrease-btn">
-              <span className="increase__btn" >
-                <i class="ri-add-line"></i>
-              </span>
-              <span className="quantity">2</span>
-              <span className="decrease__btn" >
-                <i class="ri-subtract-line"></i>
-              </span>
-            </div>
-          </div>
-
-          <span className="delete__btn" >
-            <i class="ri-close-line"></i>
+        <div className="cart__container">
+      <ListGroup className="cart">
+        <div className="cart__close">
+          <span onClick={toggleBasket}>
+            <i class="ri-close-fill"></i>
           </span>
         </div>
-      </div>
-      <div className='checkout d-flex align-items-center justify-content-between'>
-        <div>
-            <span>Subtotal: <span className='price-bold'>$120</span></span>
+
+        <div className="cart__item-list">
+          {cartProducts.length === 0 ? (
+            <h6 className="text-center mt-5">No item added to the cart</h6>
+          ) : (
+            cartProducts.map((item, index) => (
+              <CartItem item={item} key={index} />
+            ))
+          )}
         </div>
-        <button>Checkout</button>
-      </div>
-      </div>
-    </ListGroupItem>
+
+        <div className="cart__bottom d-flex align-items-center justify-content-between">
+          <h6>
+            Subtotal : <span>${totalAmount}</span>
+          </h6>
+          <button>
+            <span  onClick={toggleBasket}>
+              Checkout
+            </span>
+          </button>
+        </div>
+      </ListGroup>
+    </div>
+     
         </>
     )
 }
