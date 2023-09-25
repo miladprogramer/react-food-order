@@ -3,14 +3,27 @@ import React from 'react'
 import './Style.css'
 import product_01 from '../images/product_01.jpg'
 import { ListGroupItem } from 'reactstrap'
+import { UseSelector } from 'react-redux/es/hooks/useSelector'
+import { useDispatch } from 'react-redux'
+import { cartUiActions } from '../Redux/cartUiSlice'
+
+
+
+
 const Cart = () => {
+
+  const dispatch=useDispatch()
+  const toggleBasket=()=>{
+    dispatch(cartUiActions.toggle())
+  }
     return (
         <>
            <ListGroupItem className="border-0 cart__item">
             <div className='cart-content'>
                 <div className='content-close-btn mb-3 p-3'>
-                 <i class="ri-close-line"></i>   
+                 <i class="ri-close-line" onClick={toggleBasket}></i>   
                 </div>
+                
             
       <div className="cart__item-info d-flex gap-2 p-3">
         <img src={product_01} alt="product-img" />

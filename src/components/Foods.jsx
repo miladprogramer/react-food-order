@@ -2,7 +2,25 @@
 import React from 'react'
 import bread from '../images/bread.png'
 import './Style.css'
+import { UseSelector } from 'react-redux/es/hooks/useSelector'
+import { useDispatch } from 'react-redux'
+import { cartActions } from '../Redux/CartSlice'
+
 const Foods = (props) => {
+
+  const dispatch=useDispatch()
+
+  const addToCart=()=>{
+
+    dispatch(cartActions.addItem({
+      id,
+      title,
+      image01,
+      price,
+    }))
+  }
+
+
     const {id,title,price,image01}=props.item
   return (
     <>
@@ -12,7 +30,7 @@ const Foods = (props) => {
     <h6>{title}</h6>
     <div className='addToCart'>
         <span>${price}</span>
-        <button>Add to Cart</button>
+        <button onClick={addToCart}>Add to Cart</button>
     </div>
 </div>
     </div>

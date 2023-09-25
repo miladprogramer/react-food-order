@@ -2,6 +2,25 @@
   width: 130px;
   height: 120px;
 }
+.basket{
+  position: relative;
+}
+.basket-badge{
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  background-color: #df2020;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 
 .footer {
   background-color: #fde4e4;
@@ -297,6 +316,7 @@ font-weight: 700;
   height: 100%;
   background: rgba(0, 0, 0, 0.639);
   z-index: 9999;
+ 
 }
 .cart-content{
   position: absolute;
@@ -305,6 +325,7 @@ font-weight: 700;
   right: 0;
   width: 400px;
   height: 100%;
+
 }
 .cart__item img{
   width: 35px;
