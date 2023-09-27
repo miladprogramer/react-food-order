@@ -465,7 +465,7 @@ font-weight: 600;
 }
 .search-box input:focus{
   outline: none;
-
+ 
 }
 
 @media only screen and (max-width: 576px) {
