@@ -2,7 +2,7 @@
 import React from 'react'
 import bread from '../images/bread.png'
 import './Style.css'
-import { UseSelector } from 'react-redux/es/hooks/useSelector'
+
 import { useDispatch } from 'react-redux'
 import { cartActions } from '../Redux/CartSlice'
 

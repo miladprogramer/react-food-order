@@ -54,7 +54,7 @@ state.totalAmount=state.cartItems.reduce(
     removeItem(state,action){
         const id=action.payload
         const existingItem=state.cartItems.find((item)=>item.id===id)
-       
+        state.totalQuantity--;
 
 
         if (existingItem.quantity === 1) {

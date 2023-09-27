@@ -437,6 +437,37 @@ font-weight: 700;
   border-bottom: 1px solid #fde4e4;
 }
 
+.background-title{
+  background: linear-gradient(#212245b2, #212245b2),
+  url("../images/banner-02.jpg");
+
+
+background-size: cover;
+background-position: center;
+padding: 80px 0px;
+color: white;
+margin-top: 20px;
+}
+.background-title h2{
+margin-left: 100px;
+font-weight: 600;
+}
+
+.search-box{
+  border: 2px solid #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-box input{
+  border: none;
+
+}
+.search-box input:focus{
+  outline: none;
+
+}
+
 @media only screen and (max-width: 576px) {
   .delete__btn {
     font-size: 1rem;
