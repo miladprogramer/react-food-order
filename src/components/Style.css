@@ -467,6 +467,18 @@ font-weight: 600;
   outline: none;
  
 }
+.product-title h2{
+font-weight: 600;
+}
+.product-price{
+  color: #df2020;
+  font-size: 18px;
+
+}
+.product-price span{
+  font-size: 22px;
+font-weight: 600;
+}
 
 @media only screen and (max-width: 576px) {
   .delete__btn {
