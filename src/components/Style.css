@@ -520,7 +520,9 @@ padding: 15px;
 .form-submit input:focus , .form-submit textarea:focus{
   outline: none;
 }
-
+.sub-img img{
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 576px) {
   .delete__btn {
