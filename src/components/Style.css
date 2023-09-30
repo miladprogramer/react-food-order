@@ -523,6 +523,14 @@ padding: 15px;
 .sub-img img{
   cursor: pointer;
 }
+.review{
+ width: 70%;
+ margin: auto;
+  background-color: #fcf6f6;
+  padding: 5px;
+  border: 1px solid #ebcaca;
+  border-radius: 10px;
+}
 
 @media only screen and (max-width: 576px) {
   .delete__btn {

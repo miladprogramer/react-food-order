@@ -3,11 +3,11 @@ import {React,useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import AllProducts from '../Fake-Data/FakeData'
 import { Container,Row,Col } from 'reactstrap'
-import burger from '../images/burger.png'
+
 import './Style.css'
 import { useDispatch } from 'react-redux'
 import { cartActions } from '../Redux/CartSlice'
-import Reviews from './Reviews'
+
 const FoodDetail = () => {
   const dispatch=useDispatch()
   
@@ -29,7 +29,7 @@ const {title,image01,price,category,desc} =product
   const [enteredEmail,setEnteredEmail]=useState("")
   const [enteredReview,setEnteredReview]=useState("")
   const [reviews,setReviews]=useState([])
-  const [submited,setSubmited]=useState()
+ 
 
   const addToReviews=()=>{
 
@@ -42,10 +42,13 @@ const {title,image01,price,category,desc} =product
     setReviews((prevReviews) => {
       return [...prevReviews, item];
     });
+    setEnteredEmail("")
+    setEnteredName("")
+    setEnteredReview("")
   }
   const submitHandler = (e) => {
     e.preventDefault();
-    setSubmited(true)
+    
   
   };
   return (
@@ -110,8 +113,8 @@ const {title,image01,price,category,desc} =product
     {
       
 reviews.map((item)=>(
-  <div className='review d-flex flex-column'>
-    <div className='d-flex flex-column mb-4'>
+  <div className='review d-flex flex-column text-center mb-1'>
+    <div className='d-flex flex-column mb-4 mt-1'>
     <span className='fw-bold'>{item.name}</span>
     <span>{item.email}</span>
     <span className='mt-3'>{item.reviewText}</span>
