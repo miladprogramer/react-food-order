@@ -230,11 +230,15 @@ color: #777;
   height: 140px;
   margin-top: 5px;
 }
-.product-content h6{
+.product-content h5{
   font-weight: 600;
   margin-top: 10px;
 }
-
+.product-content h5 a{
+  color: #212245;
+ text-decoration: none;
+ font-size: 1rem;
+}
 .addToCart{
   display: flex;
   align-items: center;
