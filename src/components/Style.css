@@ -468,7 +468,7 @@ font-weight: 600;
  
 }
 .product-title h2{
-font-weight: 600;
+font-weight: 700;
 }
 .product-price{
   color: #df2020;
@@ -479,6 +479,44 @@ font-weight: 600;
   font-size: 22px;
 font-weight: 600;
 }
+.product-category span{
+  background-color: #fde4e4;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.description span{
+  font-weight: 600;
+  cursor: pointer;
+}
+.description{
+  border-bottom: 1px solid #ebcaca;
+  padding-bottom: 15px;
+}
+.tab-active{
+  color: #df2020;
+}
+.desc-text p{
+  color: #777;
+  line-height: 30px;
+}
+.form-submit{
+  width: 60%;
+  margin: auto;
+  background: #fde4e4;
+  padding: 20px;
+  border-radius: 5px;
+}
+.form-submit input , .form-submit textarea{
+background: transparent;
+border: none;
+border-bottom: 2px solid #ebcaca;
+padding: 15px;
+}
+.form-submit input:focus , .form-submit textarea:focus{
+  outline: none;
+}
+
 
 @media only screen and (max-width: 576px) {
   .delete__btn {
