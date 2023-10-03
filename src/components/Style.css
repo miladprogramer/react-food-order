@@ -1,3 +1,6 @@
+a{text-decoration: none;
+color: black;
+}
 .header-logo img {
   width: 130px;
   height: 120px;
@@ -5,6 +8,12 @@
 .basket{
   position: relative;
 }
+.menu span a:hover{
+color: #df2020;
+}
+.menu span a{
+ font-weight: 600;
+  }
 .basket-badge{
   position: absolute;
   top: -8px;

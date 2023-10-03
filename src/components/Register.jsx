@@ -2,6 +2,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const Register = () => {
+    const submitHandler = (e) => {
+        e.preventDefault();
+      };
   return (
    
     <>
@@ -15,7 +18,7 @@ const Register = () => {
 <input className='w-100' type="text" placeholder='Password' />
 <input className='w-100' type="text" placeholder='Password' />
 <div className="addToCart ">
-    <button type='submit' > Sign Up</button>
+    <button type='submit' onClick={submitHandler}> Sign Up</button>
 </div>
 
 </form>

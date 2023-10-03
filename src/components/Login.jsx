@@ -2,6 +2,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const Login = () => {
+    const submitHandler = (e) => {
+        e.preventDefault();
+      };
   return (
    
     <>
@@ -14,7 +17,7 @@ const Login = () => {
 <input className='w-100'  type="text" placeholder='Email' />
 <input className='w-100' type="text" placeholder='Password' />
 <div className="addToCart ">
-    <button type='submit' >Login</button>
+    <button type='submit' onClick={submitHandler}>Login</button>
 </div>
 
 </form>
