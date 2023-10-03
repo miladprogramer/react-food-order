@@ -5,6 +5,7 @@ import './Style.css'
 import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector'
 import { useDispatch } from 'react-redux'
 import { cartUiActions } from '../Redux/cartUiSlice'
+import { Link } from 'react-router-dom'
 const Header = () => {
   const dispatch=useDispatch()
 
@@ -19,15 +20,18 @@ const Header = () => {
     <div className='header  d-flex align-items-center justify-content-between'>
 <div className='header-logo'><img src={logo}/></div>
 <div className='menu d-flex mt-4 gap-5'>
-  <span>Home</span><span>Foods</span><span>Cart</span><span>Contact</span>
+  <span><Link to="/">Home</Link></span>
+  <span><Link to="/foods">Foods</Link></span>
+  <span><Link to="/cartpage">Cart</Link></span>
+  <span>Contact</span>
 </div>
 <div className='menu-icons d-flex mt-4 gap-4'>
   <span className='basket'>
     <span className='basket-badge'>{quantity}</span>
-  <i class="ri-shopping-basket-line" onClick={toggleBasket}></i>
+  <i className="ri-shopping-basket-line" onClick={toggleBasket}></i>
   </span>
 
-<i class="ri-user-line"></i>
+<i className="ri-user-line"></i>
 </div>
     </div>
   </Container>

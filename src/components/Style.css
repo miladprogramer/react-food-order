@@ -254,6 +254,14 @@ color: #777;
   padding: 4px 8px;
   border-radius: 5px;
 }
+ .addToCart a{
+  background: transparent;
+  border: none;
+  background-color: #df2020;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
 .addToCart span{
   font-weight: 600;
   color: #df2020;
@@ -530,6 +538,9 @@ padding: 15px;
   padding: 5px;
   border: 1px solid #ebcaca;
   border-radius: 10px;
+}
+.img-cartpage{
+  width: 70px;
 }
 
 @media only screen and (max-width: 576px) {

@@ -26,7 +26,7 @@ const totalAmount=useSelector((state)=>state.cart.totalAmount)
       <ListGroup className="cart">
         <div className="cart__close">
           <span onClick={toggleBasket}>
-            <i class="ri-close-fill"></i>
+            <i className="ri-close-fill"></i>
           </span>
         </div>
 

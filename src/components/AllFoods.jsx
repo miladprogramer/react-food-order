@@ -33,7 +33,7 @@ const AllFoods = () => {
             <div className='search-box d-flex justify-content-between mt-5 mb-5'>
               <input value={searchItem} onChange={e => setSearchItem((e).target.value)}
                 type='text' placeholder='Search' />
-              <i class="ri-search-line"></i>
+              <i className="ri-search-line"></i>
             </div>
           </Col>
         </Row>
@@ -41,7 +41,7 @@ const AllFoods = () => {
         <Row>
           {
             searchedProduct.map((item) => (
-              <Col lg="3">
+              <Col lg="3" key={item.id}>
                 <Foods item={item} />
 
               </Col>

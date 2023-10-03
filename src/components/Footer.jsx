@@ -46,7 +46,7 @@ const Footer = () => {
        </div>
        <div className='footer-input'>
         <input type='email' placeholder='Enter your email'/>
-        <i class="ri-send-plane-fill"></i>
+        <i className="ri-send-plane-fill"></i>
        </div>
             </Col>
         </Row>
@@ -59,16 +59,16 @@ const Footer = () => {
                 <div className='socials d-flex gap-4 justify-content-end'>
                 <span className='m-0'>Follow:</span>
                 <span>
-<i class="ri-facebook-circle-fill"></i>
+<i className="ri-facebook-circle-fill"></i>
                 </span>
                 <span>
-<i class="ri-twitter-fill"></i>
+<i className="ri-twitter-fill"></i>
 </span>
 <span>
-<i class="ri-github-fill"></i>
+<i className="ri-github-fill"></i>
 </span>
 <span>
-<i class="ri-linkedin-box-fill"></i>
+<i className="ri-linkedin-box-fill"></i>
 </span>
 
 

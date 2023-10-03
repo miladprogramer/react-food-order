@@ -36,8 +36,8 @@ const Category = () => {
 
 {
     categoryData.map((item,index)=>(
-        <Col lg="3">
-<div key={index} className="category-item d-flex align-items-center gap-3 mb-3">
+        <Col lg="3" key={index}>
+<div className="category-item d-flex align-items-center gap-3 mb-3">
     <div className="category-img">
         <img src={item.imgUrl}/>
     </div>

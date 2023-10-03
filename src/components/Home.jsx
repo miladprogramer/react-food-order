@@ -53,18 +53,18 @@ setProducts(AllProducts)
             accusantium optio illo quidem, expedita reiciendis explicabo?</p>
 
           <div className='home-btn mt-4'>
-            <button className='btn-normal'  >  Order now <i class="ri-arrow-right-line"></i> </button>
+            <button className='btn-normal'  >  Order now <i className="ri-arrow-right-line"></i> </button>
             <button className='btn-outline' >  See all foods </button>
           </div>
 
           <div className=' home-shipping-icons d-flex align-items-center gap-5 mt-5'>
 
             <p className='d-flex align-items-center gap-2'>
-              <span className='home-icons'><i class="ri-secure-payment-line"></i></span>
+              <span className='home-icons'><i className="ri-secure-payment-line"></i></span>
               No shipping charge
             </p>
             <p className='d-flex align-items-center gap-2'>
-              <span className='home-icons'><i class="ri-secure-payment-line"></i></span>
+              <span className='home-icons'><i className="ri-secure-payment-line"></i></span>
               No shipping charge
             </p>
 
@@ -128,7 +128,7 @@ setProducts(AllProducts)
         {
           products.map((item) => (
 
-            <Col lg="3" md="4">
+            <Col lg="3" md="4" key={item.id}>
               <Foods item={item} />
             </Col>
           ))
@@ -155,7 +155,7 @@ setProducts(AllProducts)
                 <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose-us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Fresh and tasty
+                      <i className="ri-checkbox-circle-line"></i> Fresh and tasty
                       foods
                     </p>
                     <p className="choose-us-desc">
@@ -166,7 +166,7 @@ setProducts(AllProducts)
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose-us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Quality support
+                      <i className="ri-checkbox-circle-line"></i> Quality support
                     </p>
                     <p className="choose-us-desc">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -176,7 +176,7 @@ setProducts(AllProducts)
 
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose-us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i>Order from any
+                      <i className="ri-checkbox-circle-line"></i>Order from any
                       location{" "}
                     </p>
                     <p className="choose-us-desc">

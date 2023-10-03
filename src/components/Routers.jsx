@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './Home';
 import AllFoods from './AllFoods';
 import FoodDetail from './FoodDetail';
+import CartPage from './CartPage';
 
 const Routers = () => {
   return (
@@ -13,6 +14,7 @@ const Routers = () => {
     <Route path="/foods" element={<AllFoods />} />
 
     <Route path="/foods/:id" element={<FoodDetail />} />
+    <Route path="/cartpage" element={<CartPage />} />
     {/* // <Route path="/cart" element={<Cart />} 
     // <Route path="/checkout" element={<Checkout />} />
     // <Route path="/login" element={<Login />} />

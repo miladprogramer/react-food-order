@@ -112,8 +112,8 @@ const {title,image01,price,category,desc} =product
     <>
     {
       
-reviews.map((item)=>(
-  <div className='review d-flex flex-column text-center mb-1'>
+reviews.map((item,index)=>(
+  <div key={index} className='review d-flex flex-column text-center mb-1'>
     <div className='d-flex flex-column mb-4 mt-1'>
     <span className='fw-bold'>{item.name}</span>
     <span>{item.email}</span>
