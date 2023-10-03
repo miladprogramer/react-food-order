@@ -245,6 +245,8 @@ color: #777;
   justify-content: space-between !important;
   padding: 10px;
   margin-top: 20px;
+  background: transparent;
+  border: none;
 }
 .addToCart button{
   background: transparent;
@@ -261,6 +263,7 @@ color: #777;
   color: white;
   padding: 4px 8px;
   border-radius: 5px;
+  text-decoration: none;
 }
 .addToCart span{
   font-weight: 600;
@@ -518,12 +521,31 @@ font-weight: 600;
   background: #fde4e4;
   padding: 20px;
   border-radius: 5px;
+  text-align: center;
 }
+.checkout-form{
+ 
+
+  padding: 20px;
+  border-radius: 5px;
+}
+.checkout-form input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 15px;
+  }
+  .checkout-form input:focus{
+    outline: none;
+  }
+
 .form-submit input , .form-submit textarea{
 background: transparent;
 border: none;
 border-bottom: 2px solid #ebcaca;
 padding: 15px;
+
 }
 .form-submit input:focus , .form-submit textarea:focus{
   outline: none;
@@ -541,6 +563,48 @@ padding: 15px;
 }
 .img-cartpage{
   width: 70px;
+}
+.cartpage-subtotal h6{
+  font-weight: 600;
+}
+.cartpage-subtotal span{
+  color: #df2020;
+  font-size: 22px;
+  font-weight: 700;
+}
+.cartpage-subtotal p{
+  color: #616161;
+}
+.shipping-address-title{
+  font-weight: 600;
+  font-size: 18px;
+}
+.checkout-bill{
+  background-color: #fde4e4;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
+}
+.checkout-total{
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+ 
+}
+.checkout-total span{
+  color: #df2020;
+  font-weight: 600;
+}
+.checkout-bill h6 span{
+  font-size: 18px;
+  font-weight: 600;
+}
+.login-register{
+  text-decoration: none;
+  color: #616161;
+  font-weight: 600;
+}
+.login-register:hover{
+  color: #212245;
 }
 
 @media only screen and (max-width: 576px) {
